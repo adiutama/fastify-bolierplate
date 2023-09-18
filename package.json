@@ -1,0 +1,35 @@
+{
+  "name": "fastify-boilerplate",
+  "version": "0.1.0",
+  "description": "Fastify boilerplate",
+  "scripts": {
+    "clear": "rimraf build",
+    "build": "tsc -p tsconfig.json",
+    "prebuild": "npm run clear",
+    "postbuild": "cp package.json build",
+    "start": "node -r module-alias/register server.js",
+    "dev": "nodemon -r module-alias/register server.ts"
+  },
+  "author": "Adi Utama",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/autoload": "^5.7.1",
+    "@fastify/env": "^4.2.0",
+    "@fastify/swagger": "^8.10.0",
+    "@fastify/swagger-ui": "^1.9.3",
+    "fastify": "^4.23.2",
+    "fastify-type-provider-zod": "^1.1.9",
+    "module-alias": "^2.2.3",
+    "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.2",
+    "nodemon": "^3.0.1",
+    "rimraf": "^5.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "_moduleAliases": {
+    "~": "."
+  }
+}

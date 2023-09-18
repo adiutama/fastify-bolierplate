@@ -1,0 +1,13 @@
+{
+  "watch": [
+    "."
+  ],
+  "ext": "ts",
+  "ignore": [
+    "build",
+    "*.test.ts"
+  ],
+  "execMap": {
+    "ts": "ts-node"
+  }
+}

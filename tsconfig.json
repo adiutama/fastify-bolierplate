@@ -1,0 +1,25 @@
+{
+  "ts-node": { "files": true },
+  "compilerOptions": {
+    "lib": ["es2021"],
+    "module": "node16",
+    "target": "es2021",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node16",
+
+    "outDir": "./build",
+    "baseUrl": "./",
+    "paths": {
+      "~/*": ["./*"],
+    }
+  },
+  "include": [
+    "**/*"
+  ],
+  "exclude": [
+    "build"
+  ]
+}
